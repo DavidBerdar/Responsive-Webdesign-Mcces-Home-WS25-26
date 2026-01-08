@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mcces Home Kids - Kindermöbel mit Herz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="images/logo.png" alt="Mcces Home Kids Logo">
+                </div>
+                <span>Mcces Home Kids</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#produkte">Kindermöbel</a></li>
+                <li><a href="#räume">Kinderzimmer</a></li>
+                <li><a href="#materialien">Sicherheit</a></li>
+                <li><a href="#inspiration">Ideen</a></li>
+                <li><a href="#neuheiten">Neuheiten</a></li>
+                <li><a href="#sonderangebote">Angebote</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="auth-btn">Anmelden</a>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <div class="logo-icon">🧸</div>
+                <span>Mcces Kids</span>
+            </div>
+            <button class="close-menu" onclick="toggleMobileMenu()">✕</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#produkte" onclick="toggleMobileMenu()">Kindermöbel</a></li>
+            <li><a href="#räume" onclick="toggleMobileMenu()">Kinderzimmer</a></li>
+            <li><a href="#materialien" onclick="toggleMobileMenu()">Sicherheit</a></li>
+            <li><a href="#inspiration" onclick="toggleMobileMenu()">Ideen</a></li>
+            <li><a href="#neuheiten" onclick="toggleMobileMenu()">Neuheiten</a></li>
+            <li><a href="#sonderangebote" onclick="toggleMobileMenu()">Angebote</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Traumhafte Kinderzimmer – Wo Fantasie lebendig wird</h1>
+                <p>Entdeckt unsere neue Kollektion für kleine Abenteurer! Bunte Farben, kindgerechte Designs und sichere Materialien verwandeln jedes Kinderzimmer in eine magische Welt. Jedes Möbelstück wurde mit Liebe ausgewählt, um Spiel, Lernen und Träumen zu vereinen.</p>
+                <button class="cta-btn">Jetzt entdecken</button>
+                
+                <!-- Carousel Dots unter dem Text -->
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="changeDot(0)"></span>
+                    <span class="dot" onclick="changeDot(1)"></span>
+                    <span class="dot" onclick="changeDot(2)"></span>
+                    <span class="dot" onclick="changeDot(3)"></span>
+                    <span class="dot" onclick="changeDot(4)"></span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-carousel">
+                    <!-- HERO BILDER - 5 Bilder für Carousel -->
+                    <img src="images/hero-sofa.png" alt="Kinderzimmer Sofa" class="carousel-image active">
+                    <img src="images/hero-bild2.png" alt="Kinderzimmer 2" class="carousel-image">
+                    <img src="images/hero-bild3.png" alt="Kinderzimmer 3" class="carousel-image">
+                    <img src="images/hero-bild4.png" alt="Kinderzimmer 4" class="carousel-image">
+                    <img src="images/hero-bild5.png" alt="Kinderzimmer 5" class="carousel-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section class="sustainability-section">
+        <div class="sustainability-container">
+            <div class="sustainability-header">
+                <h2>Sicherheit trifft Kinderfreude</h2>
+                <p>Unsere Kindermöbel sind nicht nur wunderschön – sie sind sicher, schadstoffgeprüft und für kleine Entdecker gemacht.</p>
+            </div>
+            
+            <div class="sustainability-grid">
+                <div class="sustainability-card">
+                    <div class="sustainability-icon"></div>
+                    <div class="sustainability-image">
+                        <img src="images/nachhaltigkeit-holz.png" alt="Schadstoffgeprüfte Materialien">
+                    </div>
+                    <div class="sustainability-content">
+                        <h3>Schadstoffgeprüfte Materialien</h3>
+                        <p>Alle unsere Kindermöbel sind nach strengsten europäischen Sicherheitsstandards geprüft. Wir verwenden ausschließlich ungiftige Lacke und schadstofffreie Materialien, damit Kinder unbeschwert spielen können.</p>
+                    </div>
+                </div>
+
+                <div class="sustainability-card">
+                    <div class="sustainability-icon"></div>
+                    <div class="sustainability-image">
+                        <img src="images/nachhaltigkeit-recycling.png" alt="Abgerundete Ecken">
+                    </div>
+                    <div class="sustainability-content">
+                        <h3>Kindersicheres Design</h3>
+                        <p>Jedes Möbelstück verfügt über abgerundete Ecken, Kippsicherungen und stabile Konstruktionen. Die Sicherheit eurer Kinder steht bei uns an erster Stelle – bei jedem Detail.</p>
+                    </div>
+                </div>
+
+                <div class="sustainability-card">
+                    <div class="sustainability-icon"></div>
+                    <div class="sustainability-image">
+                        <img src="images/nachhaltigkeit-lieferung.png" alt="Mitwachsende Möbel">
+                    </div>
+                    <div class="sustainability-content">
+                        <h3>Mitwachsende Möbel</h3>
+                        <p>Unsere cleveren Designs wachsen mit! Höhenverstellbare Tische, erweiterbare Betten und anpassbare Systeme begleiten eure Kinder über viele Jahre hinweg.</p>
+                    </div>
+                </div>
+
+                <div class="sustainability-card">
+                    <div class="sustainability-icon"></div>
+                    <div class="sustainability-image">
+                        <img src="images/nachhaltigkeit-handwerk.png" alt="Pädagogisch wertvoll">
+                    </div>
+                    <div class="sustainability-content">
+                        <h3>Spielerisch Lernen</h3>
+                        <p>Unsere Möbel fördern Kreativität und Entwicklung. Mit durchdachten Aufbewahrungslösungen lernen Kinder spielerisch Ordnung, während bunte Designs die Fantasie anregen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sustainability-stats">
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Sicherheitsgeprüft</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">Schadstoffe</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5★</span>
+                    <span class="stat-label">Eltern-Bewertung</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Jahre Nutzung</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <h2 class="section-title">Einzelprodukte</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/eichenholz-tisch.png" alt="Bunter Kindertisch">
+                </div>
+                <div class="product-info">
+                    <h3>Bunter Spiel- & Lerntisch</h3>
+                    <p>Unser farbenfroher Kindertisch ist perfekt für kreative Köpfe! Die robuste Holzplatte hält jedem Abenteuer stand, während die kindgerechte Höhe ergonomisches Sitzen ermöglicht. Ideal für Malen, Basteln und Hausaufgaben.</p>
+                    <div class="product-actions">
+                        <button class="btn-secondary">Ansicht</button>
+                        <button class="btn-cart">Zum Set</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/sofakissen-set.png" alt="Kuschel-Kissen Set">
+                </div>
+                <div class="product-info">
+                    <h3>Kuschel-Kissen Traumwelt</h3>
+                    <p>Das Kissen-Set verwandelt jede Kuschelecke in einen magischen Rückzugsort! Mit superweichen Stoffen und fröhlichen Farben lädt es zum Träumen, Lesen und Entspannen ein. Perfekt für die kleine Lese-Oase im Kinderzimmer!</p>
+                    <div class="product-actions">
+                        <button class="btn-secondary">Ansicht</button>
+                        <button class="btn-cart">Zum Set</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/senfsofa-sessel.png" alt="Kindersofa + Sessel">
+                </div>
+                <div class="product-info">
+                    <h3>Kindersofa + Matching Sessel</h3>
+                    <p>Unser Kindersofa-Set ist mehr als nur eine Sitzgelegenheit – es ist der Lieblingsplatz! Die leuchtenden Farben und das weiche Polster sorgen für stundenlangen Komfort beim Spielen, Lesen oder Fernsehen.</p>
+                    <div class="product-actions">
+                        <button class="btn-secondary">Ansicht</button>
+                        <button class="btn-cart">Zum Set</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Komplette Themenzimmer</h2>
+        <div class="collections-grid">
+            <div class="collection-card">
+                <div class="collection-image">
+                    <img src="images/kollektion1.png" alt="Kuschelecke Komplett">
+                </div>
+                <div class="collection-info">
+                    <h3>Die perfekte Kuschelecke für kleine Leseratten</h3>
+                    <div class="collection-tags">
+                        <span class="tag">Kindersofa</span>
+                        <span class="tag">Sessel</span>
+                        <span class="tag">Kissen</span>
+                    </div>
+                    <button class="cta-btn">Zur Kollektion</button>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <div class="collection-image">
+                    <img src="images/kollektion2.png" alt="Regenbogen Zimmer">
+                </div>
+                <div class="collection-info">
+                    <h3>Regenbogen-Traum: Farbenfrohes Komplettzimmer!</h3>
+                    <div class="collection-tags">
+                        <span class="tag">Sofa</span>
+                        <span class="tag">Sitzsack</span>
+                        <span class="tag">Kissen</span>
+                        <span class="tag">Hocker</span>
+                    </div>
+                    <button class="cta-btn">Zur Kollektion</button>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <div class="collection-image">
+                    <img src="images/kollektion3.png" alt="Abenteuer Zimmer">
+                </div>
+                <div class="collection-info">
+                    <h3>Abenteuer-Kollektion – nur für kurze Zeit!</h3>
+                    <div class="collection-tags">
+                        <span class="tag">Spielsofa</span>
+                        <span class="tag">Spieltisch</span>
+                        <span class="tag">Deko</span>
+                        <span class="tag">Kissen</span>
+                    </div>
+                    <button class="cta-btn">Zur Kollektion</button>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <div class="collection-image">
+                    <img src="images/kollektion4.png" alt="Prinzessinnen Zimmer">
+                </div>
+                <div class="collection-info">
+                    <h3>Zeitlose Eleganz für kleine Prinzen & Prinzessinnen</h3>
+                    <div class="collection-tags">
+                        <span class="tag">Sessel</span>
+                        <span class="tag">Sofa</span>
+                        <span class="tag">Kissen</span>
+                        <span class="tag">Deko</span>
+                    </div>
+                    <button class="cta-btn">Zur Kollektion</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <div class="logo-icon">🧸</div>
+                </div>
+                <div class="social-icons">
+                    <div class="social-icon"></div>
+                    <div class="social-icon"></div>
+                    <div class="social-icon"></div>
+                    <div class="social-icon"></div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Mehr erfahren</h4>
+                <ul>
+                    <li><a href="#">Über uns</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Häufige Fragen</a></li>
+                    <li><a href="#">Showrooms</a></li>
+                    <li><a href="#">Beratungstermin</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Einkaufen</h4>
+                <ul>
+                    <li><a href="#">Kinderzimmer</a></li>
+                    <li><a href="#">Nach Alter</a></li>
+                    <li><a href="#">Geschenkideen</a></li>
+                    <li><a href="#">Bestseller</a></li>
+                    <li><a href="#">Neuheiten</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Service</h4>
+                <ul>
+                    <li><a href="#">Eltern-Blog</a></li>
+                    <li><a href="#">Sicherheitsinfos</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">Aufbauservice</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Mcces Home Kids. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
