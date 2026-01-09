@@ -598,25 +598,11 @@ footer {
 }
 
 .social-icons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+    display: none;
 }
 
 .social-icon {
-    width: 35px;
-    height: 35px;
-    background: linear-gradient(135deg, var(--primary-pink) 0%, var(--primary-blue) 100%);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.social-icon:hover {
-    transform: scale(1.1);
+    display: none;
 }
 
 .footer-bottom {
